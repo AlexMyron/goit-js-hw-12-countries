@@ -1,8 +1,8 @@
 import refs from './refs';
-// import fetchCountries from './fetchCountries';
 import CountryQuery from './fetchCountries';
+import alertMsg from './pnotify';
 
-const countryQuery = new CountryQuery(refs);
+const countryQuery = new CountryQuery(refs, alertMsg);
 
 const debounce = require('lodash.debounce');
 let URL = null;
