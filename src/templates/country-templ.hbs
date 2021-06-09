@@ -1,0 +1,115 @@
+
+{{#each this}}
+  <li class="title">{{name}}</li>
+  <li>
+    <img class="item_img" src={{flag}}>
+  </li>
+  <li class="item">Area: 
+    <p class="text">{{area}}</p>  
+  </li>
+  <li class="item">Alternative spelling:
+    {{#each altSpelling}}
+    <p class="text">{{this}}</p>
+    {{/each}}
+  </li>
+  <li class="item">
+    Border with:
+    <p class="text">
+      {{borders}}
+    </p>
+    </li>
+  <li class="item">
+      Calling codes:
+    <p class="text">
+      {{callingCodes}}
+    </p>
+    </li>
+  <li class="item">
+    Capital:
+    <p class="text">
+      {{capital}}
+    </p>
+    </li>
+  <li class="item">
+    Currencies:
+    <p class="text">
+      {{currencies}}
+    </p>
+    </li>
+  <li class="item">
+    Demonym:
+    <p class="text">
+      {{demonym}}
+    </p>
+    </li>  
+  <li class="item">    
+    Languages: 
+    {{#each languages}}
+      <p class="text">
+        {{this.name}}
+      </p>
+    {{/each}}
+    </li>
+  <li class="item">
+    latlng: 
+    <p class="text">
+      {{latlng}}
+    </p>
+    </li>
+  <li class="item">
+    Native name: 
+    <p class="text">
+      {{nativeName}}
+    </p>
+    </li>
+  <li class="item">
+    Numeric code: 
+    <p class="text">
+      {{numericCode}}
+    </p>
+    </li>
+  <li class="item">
+    Population: 
+    <p class="text">
+      {{population}}
+    </p>
+    </li>
+  <li class="item">
+    Regional blocs: 
+    {{#each regionalBlocs}}
+      <p class="text">{{this.acronym}}</p>
+      <p class="text">{{this.name}}</p>
+      <p class="text">{{this.otherNames}}</p>
+    {{/each}}
+    </li>
+  <li class="item">
+    Region: 
+    <p class="text">
+      {{region}}
+    </p>
+    </li>
+  <li class="item">
+    Subregion: 
+    <p class="text">
+      {{subregion}}
+    </p>
+    </li>
+  <li class="item">
+    Timezones: 
+    <p class="text">
+      {{timezones}}
+    </p>
+    </li>
+  <li class="item">
+    Top level domain: 
+    <p class="text">
+      {{topLevelDomain}}
+    </p>
+    </li>
+  <li class="item">
+    translations: 
+    {{#each translations}}
+      <p class="text">{{this}}</p>
+    {{/each}}
+  </li>
+{{/each}}
