@@ -19,7 +19,10 @@ export default class CountryQuery {
         } else {
           this.markupList(result, countryTempl);
         }
-      });
+      })
+      .catch(err =>
+        console.log('An error has occured. Please check your query content.'),
+      );
   }
 
   markupList(result, template) {

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./index.html">Back to main page</a>
+
+    <form action="" class="js-search-form">
+      <div class="form-group">
+        <label for="searchQuery">Что ищем?</label>
+        <input
+          type="text"
+          name="query"
+          id="searchQuery"
+          placeholder="Что ищем?"
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit">Искать</button>
+    </form>
+
+    <ul class="js-articles-container"></ul>
+
+    <button type="button" data-action="load-more">
+      <span class="" role="status" aria-hidden="true"></span>
+      <span class="" role="status" aria-hidden="true"></span>
+      Дальше
+    </button>
+
+    <script src="./js/pagination.js"></script>
+  </body>
+</html>
