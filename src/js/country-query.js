@@ -17,5 +17,6 @@ function onInput(e) {
   if (val === '') {
     return;
   }
-  countryQuery.fetchCountries(URL);
+  // countryQuery.fetchCountries(URL);
+  countryQuery.resolveFetch(URL);
 }

@@ -12,15 +12,23 @@ export default class NewsApiService {
     this.page = 1;
   }
 
-  fetchArticles() {
+  // fetchArticles() {
+  //   const url = `${BASE_URL}everything?q=${this.searchQuery}&language=en&pageSize=5&page=${this.page}`;
+
+  //   return fetch(url, options)
+  //     .then(rerponce => rerponce.json())
+  //     .then(({ articles }) => {
+  //       this.incrementPage();
+  //       return articles;
+  //     });
+  // }
+
+  async fetchArticles() {
     const url = `${BASE_URL}everything?q=${this.searchQuery}&language=en&pageSize=5&page=${this.page}`;
 
-    return fetch(url, options)
-      .then(rerponce => rerponce.json())
-      .then(({ articles }) => {
-        this.incrementPage();
-        return articles;
-      });
+    const resolve = await fetch(url, options);
+    const articles = await response.json();
+    return articles;
   }
 
   incrementPage() {
